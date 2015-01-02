@@ -1,0 +1,232 @@
+body {
+  font-family: Sniglet, sans-serif, arial;
+}
+
+#page-main-container {
+  display: none;
+}
+
+#page-title-container {
+  margin-top: 25px;
+  text-align: center
+}
+
+#page-title-text {
+  color: purple;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+#num-of-players-main {
+  background-color: rgba(234, 130, 228, 0.7);
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 0px #aaa;
+  height: 120px;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 470px;
+}
+
+#num-of-players-title {
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  padding-top: 22px;
+}
+
+#num-of-players-btn-contaimer {
+  height: 50px;
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17px;
+}
+
+.num-of-players-btn {
+  font-size: 17px;
+  font-weight: 600;
+  height: 35px;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 68px;
+}
+
+#rolls-main {
+  display: none;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: left;
+  width: 875px
+}
+
+.rolls-btn {
+  font-size: 17px;
+  font-weight: 600;
+  height: 35px;
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 68px;
+}
+
+.scoresheets-main {
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 960px
+}
+
+.scoresheet {
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 7px;
+  box-shadow: 1px 2px 2px 0px #aaa;
+  display: none;
+  height: 70px;
+  padding-top: 5px;
+}
+
+#Scoresheet-Player-1 {
+  background-color: rgba(238, 132, 54, 0.77);
+}
+
+#Scoresheet-Player-2 {
+  background-color: rgba(238, 209, 54, 0.71);
+}
+
+#Scoresheet-Player-3 {
+  background-color: rgba(106, 238, 54, 0.56);
+}
+
+#Scoresheet-Player-4 {
+  background-color: rgba(54, 237, 238, 0.51);
+}
+
+.scoresheet-name-container {
+  display: inline-block;
+  height: 60px;
+  text-align: center;
+  width: 180px;
+  vertical-align: top;
+}
+
+.scoresheet-name {
+  font-size: 21px;
+  letter-spacing: 0.5px;
+  padding-top: 21px
+}
+
+.scoresheet-frame {
+  display: inline-block;
+  height: 60px;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 2px;
+  vertical-align: top;
+  width: 60px
+}
+
+.scoresheet-frame-first-roll {
+  border: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  height: 25px;
+  margin-top: 1px;
+  margin-right: 4px;
+  text-align: center;
+  width: 26px;
+  float: left;
+}
+
+.scoresheet-frame-first-roll-score {
+  padding-top: 5px;
+}
+
+.scoresheet-frame-second-roll {
+  border: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  margin-top: 1px;
+  float: left;
+  height: 25px;
+  text-align: center;
+  width: 26px
+}
+
+.scoresheet-frame-second-roll-score {
+  padding-top: 5px;
+}
+
+.scoresheet-frame-score-container {
+  border: 1px solid rgb(0, 0, 0);
+  height: 27px;
+  margin-top: 32px;
+  text-align: center;
+  width: 57px
+}
+
+.scoresheet-frame-score {
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.scoresheet-bonus-rolls-container {
+  display: inline-block;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.scoresheet-first-bonus-roll {
+  border: 1px solid rgb(0, 0, 0);
+  height: 25px;
+  margin-bottom: 3px;
+  margin-top: 1px;
+  width: 26px
+}
+
+.scoresheet-first-bonus-roll-score {
+  padding-top: 5px;
+}
+
+.scoresheet-second-bonus-roll {
+  border: 1px solid rgb(0, 0, 0);
+  height: 25px;
+  margin-top: 4px;
+  width: 26px
+}
+
+.scoresheet-second-bonus-roll-score {
+  padding-top: 5px;
+}
+
+.scoresheet-total-score-container {
+  display: inline-block;
+  position: absolute;
+  height: 60px;
+  text-align: center;
+  width: 100px
+}
+
+.scoresheet-total-score {
+  font-size: 21px;
+  letter-spacing: 0.5px;
+  padding-top: 22px
+}
+
+.spacer {
+  height: 25px;
+  width: 960px;
+}
+
+#new-game-btn {
+  color: rgb(155, 54, 205);
+  display: none;
+  font-size: 17px;
+  font-weight: 600;
+  height: 35px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 122px;
+}

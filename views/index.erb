@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bowling Score Tracker</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <link type='text/css' rel='stylesheet' href='./css/reset.css' />
+    <link type='text/css' rel='stylesheet' href='./css/style.css' />
+    <link type='text/css' rel='stylesheet' href='./css/jquery-ui-1.11.2-min.css' />
+    <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Sniglet' />
+    <script type='text/javascript' src='./javascript/jquery-2.1.1-min.js' ></script>
+    <script type='text/javascript' src='./javascript/jquery-ui-1.11.2-min.js' ></script>
+  </head>
+  <body>
+    <div id='page-main-container'>
+      <div id='page-title-container'>
+        <p id='page-title-text'>Bowling Score Tracker</p>
+      </div>
+      <div id='num-of-players-main'>
+        <p id='num-of-players-title'>Please select number of players</p>
+        <div id='num-of-players-btn-contaimer'>
+          <% for index in 1..4 %>
+            <button class='num-of-players-btn' value=<%="#{index}"%>><%="#{index}"%></button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div id='rolls-main'>
+      <% for index in 0..10 %>
+        <button class='rolls-btn' id=<%="rolls-btn-#{index}"%> value=<%="#{index}"%>><%="#{index}"%></button>
+      <% end %>
+      <button id='new-game-btn'>New Game</button>
+    </div>
+    <div class='scoresheets-main'>
+      <% player_counter = 1 %>  
+      <% for player in ['one', 'two', 'three', 'four'] %>
+        <div class='scoresheet' id=<%="Scoresheet-Player-#{player_counter}"%>>
+          <div class='scoresheet-name-container'>
+            <p class='scoresheet-name'>Player <%=player.capitalize%></p>
+          </div>
+          <% counter = 0 %>
+          <% frame_counter = 0 %>
+          <% for i in 0..9 %>
+            <div class='scoresheet-frame'>
+              <div class='scoresheet-frame-first-roll'>
+                <p class='scoresheet-frame-first-roll-score' id='<%= player + counter.to_s %>'></p>
+              </div>
+              <% counter += 1 %>
+              <div class='scoresheet-frame-second-roll'>
+                <p class='scoresheet-frame-second-roll-score' id='<%= player + counter.to_s %>'></p>
+              </div>
+              <div class='scoresheet-frame-score-container'>
+                <p class='scoresheet-frame-score' id='<%= player + 'F' + frame_counter.to_s %>'></p>
+              </div>
+              <% counter += 1 %>
+              <% frame_counter += 1 %>
+            </div>
+          <% end %>
+          <div class='scoresheet-bonus-rolls-container'>
+            <div class='scoresheet-first-bonus-roll'>
+              <p class='scoresheet-first-bonus-roll-score' id='<%= player + counter.to_s %>'></p>
+            </div>
+            <% counter += 2 %>
+            <div class='scoresheet-second-bonus-roll'>
+              <p class='scoresheet-second-bonus-roll-score' id='<%= player + counter.to_s %>'></p>
+            </div>
+          </div>
+          <div class='scoresheet-total-score-container'>
+            <p class='scoresheet-total-score' id='<%= player + 'T' %>'>0</p>
+          </div>
+          <% player_counter += 1 %>
+        </div>
+        <div class='spacer'></div>
+      <% end %>
+    </div>
+  </body>
+  <script type='text/javascript' src='./javascript/bowling.js' ></script>
+</html>
