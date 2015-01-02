@@ -14,7 +14,7 @@
 
 <div width="400px" >
   <a href="https://raw.githubusercontent.com/nadavmatalon/bowling_score_tracker/master/public/images/bowling_screenshot.png">
-    <img src="/public/images/bowling_screenshot.png" width="500" height="400px" style="border: 1px, solid, black"/>
+    <img src="/public/images/bowling_screenshot.png" width="500" height="400px" border="1px, solid, black"/>
   </a>
 </div>
 
