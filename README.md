@@ -91,8 +91,8 @@ it should hopefully look decent in other browsers as well):
 ##Testing
 
 Unit and feature tests for the back-end logic and front-end interface 
-were written with [Rspec](http://rspec.info/) (3.1.7) &amp;  
-[Capybara](https://github.com/jnicklas/capybara) (2.4.1)).
+were written with [Rspec](http://rspec.info/) (3.1.7)  
+&amp; [Capybara](https://github.com/jnicklas/capybara) (2.4.1).
 
 To run the tests, clone the repo to a local folder and then run:
 
