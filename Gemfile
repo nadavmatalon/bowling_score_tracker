@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.5'
 
 # https://github.com/sinatra/sinatra
 gem 'sinatra', '~> 1.4'
