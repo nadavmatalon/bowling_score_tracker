@@ -25,5 +25,7 @@ group :test, :development do
   gem 'rspec-collection_matchers', '~> 1.0.0'
   # https://github.com/teampoltergeist/poltergeist
   gem 'poltergeist', '~> 1.5.1'
-
+  # https://github.com/pry/pry
+  gem 'pry', '~> 0.10'
+  
 end
