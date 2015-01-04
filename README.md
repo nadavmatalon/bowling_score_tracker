@@ -1,10 +1,14 @@
 #Bowling Score Tracker
 
+[![Code Climate](https://codeclimate.com/github/nadavmatalon/bowling_score_tracker/badges/gpa.svg)](https://codeclimate.com/github/nadavmatalon/bowling_score_tracker)
+
+
 ## Table of Contents
 
 * [Screenshot](#screenshot)
 * [General Description](#general-description)
 * [How to Install and Run](#how-to-install-and-run)
+* [See it Live on Heroku](#see-it-live-on-heroku)
 * [Browsers](#browsers)
 * [Testing](#testing)
 * [License](#license)
@@ -76,6 +80,16 @@ Then open the browser of your choice and go to this address:
 ```
 http://localhost:3000/
 ```
+
+
+##See it Live on Heroku
+
+A live version of the game can be found at:
+
+[Bowling Score Tracker on Heroku](https://bowling-score-tracker.herokuapp.com/)
+
+As I'm using Heroku's free hosting service, the app may take a bit of time to upload<br/>
+(Heroku's giros take time to wake up...), so please be patient.
 
 
 ##Browsers
