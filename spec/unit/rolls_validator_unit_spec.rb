@@ -137,17 +137,17 @@ describe RollsValidator do
       end
     end
 
-    it 'knows which rolls are available for first roll' do
+    it 'knows which rolls are legitimate for first roll' do
       validator = RollsValidator.new
-      expect(validator.available_rolls).to eq (0..10).to_a
+      expect(validator.legit_rolls).to eq (0..10).to_a
     end
 
-    it 'knows which rolls are available for second roll' do
+    it 'knows which rolls are legitimate for second roll' do
       first_rolls = [[0], [9], [10, 'nc']]
       expected_results = [(0..10).to_a, [0, 1], []]
       first_rolls.each_with_index do |first_roll, index|
         validator = RollsValidator.new(*first_roll)
-        expect(validator.available_rolls).to eq expected_results[index]
+        expect(validator.legit_rolls).to eq expected_results[index]
       end
     end
   end

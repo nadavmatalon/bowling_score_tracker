@@ -29,17 +29,17 @@
         player_roll,
         player_frame,
         player_score,
-        available_rolls
+        available_rolls;
     $.post('/roll',
       {
         num_of_pins: selectedButton
       }, function(data) {
         game_data = jQuery.parseJSON(data);
-        player_name = game_data.player_name
-        player_roll = game_data.player_roll
-        player_frame = game_data.player_frame
-        player_score = game_data.player_score
-        available_rolls = game_data.available_rolls
+        player_name = game_data.player_name;
+        player_roll = game_data.player_roll;
+        player_frame = game_data.player_frame;
+        player_score = game_data.player_score;
+        available_rolls = game_data.available_rolls;
       },'text').success(function() {
         $('#' + player_name + player_roll).text(selectedButton);
         $('#' + player_name + 'F' + player_frame).text(player_score);
