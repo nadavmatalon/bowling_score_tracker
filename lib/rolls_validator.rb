@@ -25,11 +25,11 @@ class RollsValidator
   end
 
   def second_in_range?
-    check = available_rolls.push(nil).include?(second)
+    check = legit_rolls.push(nil).include?(second)
     check ? true : fail(ArgumentError, err_messages[:second_val])
   end
 
-  def available_rolls
+  def legit_rolls
     return [] if first == STRIKE
     first ? (0..(STRIKE - first)).to_a : (0..STRIKE).to_a
   end
